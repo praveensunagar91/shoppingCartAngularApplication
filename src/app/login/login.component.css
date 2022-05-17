@@ -1,0 +1,37 @@
+.login-section{
+  background-color: #f5f5f5;
+}
+.shadow-md {
+  -webkit-box-shadow: 0px 0px 50px -35px rgb(0 0 0 / 40%) !important;
+  box-shadow: 0px 0px 50px -35px rgb(0 0 0 / 40%) !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+hr {
+  opacity: 0.1;
+}
+p {
+  line-height: 1.8;
+}
+form {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+.form-control:not(.form-control-sm) {
+  padding: 0.81rem 0.96rem;
+  height: inherit;
+}
+.form-control, .form-select {
+  border-color: #dae1e3;
+  font-size: 16px;
+  color: #656565;
+}
+.btn:not(.btn-link):not(.cancelBtn):not(.applyBtn) {
+  -webkit-box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);
+}
+.loginError{
+  color: red;
+}

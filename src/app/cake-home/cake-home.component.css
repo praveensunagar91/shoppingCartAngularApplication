@@ -1,0 +1,156 @@
+
+  .containet-fluid.ckae-slide {
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+.cake-image-sec {
+  padding-top: 20px;
+  padding-left: 159px;
+  padding-right: 283px;
+}
+h3.first-text {
+  font-weight: 800;
+}
+h3.second-text {
+  color: #ff2300;
+  font-weight: 700;
+}
+.cake-content {
+  padding-top: 20px;
+}
+p.first-text {
+  margin-bottom: 0rem;
+}
+a.order-tag {
+  padding: 10px 15px;
+  background-color: #186ae3;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+}
+a.bar-tag {
+  margin-top: 30px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.icons-view-sec {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.frest-icon-view {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 4px 4px 4px 2px lightgrey;
+    margin-right: 30px;
+}
+i.fas.fa-birthday-cake {
+  margin-left: 15px;
+  margin-top: 9px;
+  color: blue;
+}
+i.fas.fa-pizza-slice{
+  margin-left: 15px;
+  margin-top: 9px;
+  color: blue;
+}
+i.fas.fa-cookie-bite{
+  margin-left: 15px;
+  margin-top: 9px;
+  color: blue;
+}
+.icon-text{
+  margin-left: 9px;
+  font-size: 11px;
+}
+.cake-text{
+  margin-left: 12px;
+  font-size: 11px;
+}
+
+.slide-custom.owl-dots.ng-star-inserted{
+  position: absolute !important;
+}
+
+h3.second-sec-heading {
+  margin-top: 100px;
+  font-size: 35px;
+  font-weight: 700;
+}
+.card {
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px 2px lightgrey;
+  border: none;
+  margin-bottom: 30px;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  background: aliceblue;
+}
+.card-title {
+  margin-bottom: 0.0rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+p.card-text {
+  font-size: 13px;
+  color: #0000006e;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+span.amount {
+  color:#7900FF ;
+  font-weight: 400;
+}
+span.offer {
+  color: #FF8A00 ;
+  font-size: 12px;
+  margin-top: 2px;
+}
+span.strike {
+  text-decoration: line-through;
+}
+ngb-rating {
+  font-size: 30px;
+  color:#FFCE31 ;
+}
+span.review {
+  font-size: 14px;
+  color: #0000008a;
+  font-weight: 400;
+}
+.reviews {
+  margin-top: 13px;
+}
+section.flowers {
+  margin-bottom: 30px;
+}
+h3.flower-sec-head {
+  margin-top: 70px;
+  font-size: 35px;
+  font-weight: 700;
+}
+a.view-more {
+  padding: 10px 15px;
+  background-color: #007bff;
+  border-radius: 7px;
+  color: white;
+  margin-right: 24px;
+  text-decoration: none;
+    cursor: pointer;
+}
+img.card-img-top.productImage {
+  height: 200px;
+  width: 100%;
+}
+.card:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}

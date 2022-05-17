@@ -1,0 +1,69 @@
+.footer-sec {
+  background-color: #3f51b5;
+}
+img.img-fluid.footer-logo {
+  height: 80px;
+  width: 80px;
+}
+a.nav-link.p-0.text-muted {
+  color: white !important;
+}
+a.nav-link.p-0.text-muted.nxt-txt {
+  margin-left: 23px;
+}
+i.fas.fa-map-marker-alt {
+  color: white;
+  margin-right: 7px;
+  margin-top: 4px;
+}
+i.far.fa-envelope-open{
+  color: white;
+  margin-right: 7px;
+  margin-top: 4px;
+}
+i.fas.fa-mobile-alt {
+  color: white;
+  margin-right: 14px;
+  margin-top: 4px;
+}
+.d-flex.flex-row.last-sec {
+  margin-top: 11px;
+}
+h5.foo-head {
+  color: white;
+}
+p.foo-txt {
+  color: white;
+}
+.icon-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+i.fab.fa-facebook-square.mr-3 {
+  color: white;
+  font-size: 30px;
+}
+i.fab.fa-twitter-square.mr-3 {
+  color: white;
+  font-size: 30px;
+}
+i.fab.fa-youtube-square.mr-3 {
+  color: white;
+  font-size: 30px;
+}
+i.fab.fa-google-plus-square {
+  color: white;
+  font-size: 30px;
+}
+p.develop-txt {
+  color: white;
+}
+button.btn.btn-primary.subscribe {
+  background-color: #f18c06;
+}
+img.img-fluid.footer-logo:hover {
+  cursor: pointer;
+}
+.column:hover {
+  cursor: pointer;
+}

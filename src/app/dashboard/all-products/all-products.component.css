@@ -1,0 +1,132 @@
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.text-5 {
+  font-size: 1.3125rem !important;
+}
+hr {
+  opacity: 0.1;
+}
+.list-item {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.list-item > li {
+  display: block;
+  position: relative;
+}
+.list-item li a {
+  padding: 7px 0px 7px 15px;
+  color: #4c4d4d;
+  display: block;
+}
+.list-item li a:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  border-color: #000;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  width: 7px;
+  height: 7px;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.tags {
+  margin-bottom: 10px;
+}
+.tags a {
+  background: #f4f5f4;
+  color: #4c4d4d;
+  padding: 8px 12px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a {
+  color: black !important;
+}
+.shadow-sm.rounded.p-3.mb-5 {
+  background: #f5f5f5 !important;
+}
+
+
+/* card-css */
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px 2px lightgrey;
+  border: none;
+  margin-bottom: 30px;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  background: aliceblue;
+}
+.card-title {
+  margin-bottom: 0.0rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+p.card-text {
+  font-size: 13px;
+  color: #0000006e;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+span.amount {
+  color:#7900FF ;
+  font-weight: 400;
+}
+span.offer {
+  color: #FF8A00 ;
+  font-size: 12px;
+  margin-top: 2px;
+}
+span.strike {
+  text-decoration: line-through;
+}
+ngb-rating {
+  font-size: 30px;
+  color:#FFCE31 ;
+}
+span.review {
+  font-size: 14px;
+  color: #0000008a;
+  font-weight: 400;
+}
+.reviews {
+  margin-top: 13px;
+}
+h3.flower-sec-head {
+  margin-top: 70px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+img.card-img-top.productImage {
+  height: 150px;
+  width: 100%;
+}
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: white !important;
+  border-radius: 0.25rem;
+}

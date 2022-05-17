@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/"><img class="img-fluid logo-brand rounded-circle" src="assets/Logo.jpg"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse"></div>
+    <div class="collapse navbar-collapse"></div>
+    <div class="collapse navbar-collapse"></div>
+    <div class="collapse navbar-collapse"></div>
+    <div class="collapse navbar-collapse"></div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item item-padding">
+          <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item item-padding" *ngIf="logStatus">
+          <a class="nav-link">Cakes</a>
+        </li>
+        <li class="nav-item item-padding" *ngIf="!logStatus">
+          <a class="nav-link" routerLink="/login">Cakes</a>
+        </li>
+        <li class="nav-item item-padding" *ngIf="logStatus">
+          <a class="nav-link">Flowers</a>
+        </li>
+        <li class="nav-item item-padding" *ngIf="!logStatus">
+          <a class="nav-link" routerLink="/login">Flowers</a>
+        </li>
+        <i class="fas fa-shopping-cart"></i>
+        <li class="nav-item item-padding-cart" *ngIf="logStatus">
+          <a class="nav-link" routerLink="/dashboard/cart">Cart</a>
+        </li>
+        <li class="nav-item item-padding-cart" *ngIf="!logStatus">
+          <a class="nav-link" routerLink="/login">Cart</a>
+        </li>
+        <li class="nav-item item-padding" *ngIf="!logStatus">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item item-padding" *ngIf="logStatus">
+          <a class="nav-link" (click)="logOut()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

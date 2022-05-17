@@ -1,0 +1,266 @@
+<div class="d-flex justify-content-center mt-5 mb-5" *ngIf="loading">
+<app-loading></app-loading>
+</div>
+<div class="main-section" *ngIf="!loading">
+<div class="containet-fluid ckae-slide d-sm-none d-lg-block">
+  <owl-carousel-o [options]="customOptions">
+<ng-template carouselSlide  class="slide-custom">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+        <div class="cake-image-sec">
+          <img class="cake-img rounded-circle" src="assets/cake.jpg">
+        </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+        <div class="cake-content">
+          <div class="text-left">
+            <div class="d-flex flex-row">
+              <h3 class="first-text">Freshly</h3>&nbsp;&nbsp;
+              <h3 class="second-text">Baked</h3>
+            </div>
+            <h3 class="first-text">Everyday</h3>
+            <p class="first-text">Made by using traditional and modern techniques combined</p>
+            <p>to produce the best</p>
+          </div>
+          <div class="d-flex flex-row">
+            <a class="order-tag">Order now</a>&nbsp;&nbsp;
+            <a class="bar-tag">See Menu-></a>
+          </div>
+          <div class="icons-view-sec">
+            <div class="d-flex flex-row">
+              <div class="frest-icon-view">
+                <div class="d-flex flex-column">
+                  <i class="fas fa-birthday-cake"></i>
+                  <span class="cake-text" >cake</span>
+                </div>
+              </div>
+              <div class="frest-icon-view">
+                <div class="d-flex flex-column">
+                  <i class="fas fa-pizza-slice"></i>
+                <span class="icon-text">Bread</span>
+                </div>
+              </div>
+              <div class="frest-icon-view">
+                <div class="d-flex flex-column">
+                  <i class="fas fa-cookie-bite"></i>
+                  <span class="icon-text">cookies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide >
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="cake-image-sec">
+            <img class="cake-img rounded-circle" src="assets/cake.jpg">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="cake-content">
+            <div class="text-left">
+              <div class="d-flex flex-row">
+                <h3 class="first-text">Freshly</h3>&nbsp;&nbsp;
+                <h3 class="second-text">Baked</h3>
+              </div>
+              <h3 class="first-text">Everyday</h3>
+              <p class="first-text">Made by using traditional and modern techniques combined</p>
+              <p>to produce the best</p>
+            </div>
+            <div class="d-flex flex-row">
+              <a class="order-tag">Order now</a>&nbsp;&nbsp;
+              <a class="bar-tag">See Menu-></a>
+            </div>
+            <div class="icons-view-sec">
+              <div class="d-flex flex-row">
+                <div class="frest-icon-view">
+                  <div class="d-flex flex-column">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span class="cake-text" >cake</span>
+                  </div>
+                </div>
+                <div class="frest-icon-view">
+                  <div class="d-flex flex-column">
+                    <i class="fas fa-pizza-slice"></i>
+                  <span class="icon-text">Bread</span>
+                  </div>
+                </div>
+                <div class="frest-icon-view">
+                  <div class="d-flex flex-column">
+                    <i class="fas fa-cookie-bite"></i>
+                    <span class="icon-text">cookies</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    </owl-carousel-o>
+  </div>
+
+  <!-- cake section -->
+<section class="second-section">
+  <div class="container">
+    <h3 class="second-sec-heading">Products</h3>
+    <div class="carousel-section mt-5 mb-3">
+      <owl-carousel-o [options]="cakeOptions">
+          <ng-container *ngFor="let item of productData">
+            <ng-template carouselSlide>
+              <div class="card" style="width: 18rem;" *ngIf="logStatus" (click)="getProductId(item.id)">
+                <img src="{{item.image}}" class="card-img-top productImage" alt="...">
+                <div class="card-body">
+                  <p class="card-title">{{item.title|slice:0:20}}...</p>
+                  <p class="card-text">{{item.description|slice:0:20}}...</p>
+                  <div class="d-flex flex-row">
+                    <span class="strike">Rs. 999</span>&nbsp;
+                    <span class="amount">{{item.price|currency:'INR'}}</span>&nbsp;
+                    <span class="offer">(30% off)</span>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div class="ratings">
+                      <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+                    </div>
+                    <div class="reviews">
+                      <span class="review">({{item.rating.count}})</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;" *ngIf="!logStatus" (click)="login()">
+                <img src="{{item.image}}" class="card-img-top productImage" alt="...">
+                <div class="card-body">
+                  <p class="card-title">{{item.title|slice:0:20}}...</p>
+                  <p class="card-text">{{item.description|slice:0:20}}...</p>
+                  <div class="d-flex flex-row">
+                    <span class="strike">Rs. 999</span>&nbsp;
+                    <span class="amount">{{item.price|currency:'INR'}}</span>&nbsp;
+                    <span class="offer">(30% off)</span>
+                  </div>
+                  <div class="d-flex flex-row">
+                    <div class="ratings">
+                      <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+                    </div>
+                    <div class="reviews">
+                      <span class="review">({{item.rating.count}})</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+        <div class="d-flex flex-row justify-content-end">
+          <a class="view-more" routerLink="/dashboard/allProducts" *ngIf="logStatus">View more</a>
+          <a class="view-more"  *ngIf="!logStatus" (click)="login()">View more</a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- flower section -->
+<section class="flowers">
+  <div class="container">
+    <h3 class="flower-sec-head">Flowers</h3>
+    <div class="flowers-carousel mt-5">
+      <owl-carousel-o [options]="flowerOptions">
+        <ng-template carouselSlide>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/rose.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title">Tall arrangement rose</p>
+              <p class="card-text">100 red roses arrangements</p>
+              <div class="d-flex flex-row">
+                <span class="strike">Rs. 999</span>&nbsp;
+                <span class="amount">Rs. 599</span>&nbsp;
+                <span class="offer">(30% off)</span>
+              </div>
+              <div class="d-flex flex-row">
+                <div class="ratings">
+                  <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+                </div>
+                <div class="reviews">
+                  <span class="review">(20 reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/rose.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title">Tall arrangement rose</p>
+              <p class="card-text">100 red roses arrangements</p>
+              <div class="d-flex flex-row">
+                <span class="strike">Rs. 999</span>&nbsp;
+                <span class="amount">Rs. 599</span>&nbsp;
+                <span class="offer">(30% off)</span>
+              </div>
+              <div class="d-flex flex-row">
+                <div class="ratings">
+                  <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+                </div>
+                <div class="reviews">
+                  <span class="review">(20 reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/rose.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title">Tall arrangement rose</p>
+              <p class="card-text">100 red roses arrangements</p>
+              <div class="d-flex flex-row">
+                <span class="strike">Rs. 999</span>&nbsp;
+                <span class="amount">Rs. 599</span>&nbsp;
+                <span class="offer">(30% off)</span>
+              </div>
+              <div class="d-flex flex-row">
+                <div class="ratings">
+                  <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+                </div>
+                <div class="reviews">
+                  <span class="review">(20 reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="card" style="width: 18rem;">
+            <img src="assets/rose.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-title">Tall arrangement rose</p>
+              <p class="card-text">100 red roses arrangements</p>
+              <div class="d-flex flex-row">
+                <span class="strike">Rs. 999</span>&nbsp;
+                <span class="amount">Rs. 599</span>&nbsp;
+                <span class="offer">(30% off)</span>
+              </div>
+              <div class="d-flex flex-row">
+                <div class="ratings">
+                  <ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+                </div>
+                <div class="reviews">
+                  <span class="review">(20 reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+        </owl-carousel-o>
+        <div class="d-flex flex-row justify-content-end">
+          <a class="view-more">View more</a>
+        </div>
+        </div>
+      </div>
+</section>
+</div>

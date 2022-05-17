@@ -1,0 +1,24 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #3f51b5 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+li.nav-item.item-padding {
+  padding: 0px 15px;
+}
+i.fas.fa-shopping-cart {
+  margin-top: 12px;
+  margin-left: 0px;
+  color: white;
+}
+a.navbar-brand {
+  margin-left: 45px;
+}
+img.img-fluid.logo-brand {
+  height: 50px;
+  width: 50px;
+}
+a.nav-link {
+  cursor: pointer;
+}
